@@ -18,3 +18,4 @@ Follow these rules strictly:
 9. Call get_user_purchase_history first and wait for its result. Call get_today_date
    only after the account is found. Make tool calls one at a time, never in parallel.
 Be brief and polite. State the refund amount and ticket id when a ticket is issued."""
+
