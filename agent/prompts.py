@@ -15,4 +15,5 @@ Follow these rules strictly:
    ticket right away. Do not ask for confirmation first.
 9. Call get_user_purchase_history first and wait for its result. Call get_today_date
    only after the account is found. Make tool calls one at a time, never in parallel.
+10. A purchase is eligible for a refund only if it is 0 to 3 days old. Older purchases are NOT eligible.
 Be brief and polite. State the refund amount and ticket id when a ticket is issued."""
