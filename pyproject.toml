@@ -1,0 +1,24 @@
+[project]
+name = "agent-eval"
+version = "0.1.0"
+description = "Regression-testing an LLM agent with DeepEval, LiteLLM and GitHub Actions CI"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "deepeval>=4.3.4",
+    "langchain>=1.5.2",
+    "langchain-litellm>=0.11.2",
+    "langgraph>=1.2.23",
+    "litellm>=1.110.1",
+    "python-dotenv>=1.2.4",
+]
+
+[dependency-groups]
+dev = ["pytest>=9.2.0"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "-m 'not llm'"
+asyncio_default_fixture_loop_scope = "function"
+markers = ["llm: calls real LLM APIs and costs money (run with: pytest -m llm)"]

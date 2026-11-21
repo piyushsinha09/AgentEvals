@@ -1,0 +1,30 @@
+{
+  "averages": {
+    "tool_correctness": 1.0,
+    "argument_correctness": 0.9523809523809524,
+    "answer_correctness": 0.9642857142857143,
+    "task_completion": 0.8914285714285715,
+    "step_efficiency": 0.9821428571428571,
+    "plan_quality": 0.45,
+    "plan_adherence": 0.9464285714285714
+  },
+  "check_pass_rate": 1.0,
+  "cases": 14,
+  "case_checks": {
+    "eligible_single_item": true,
+    "expired_purchase": true,
+    "only_one_of_two_items": true,
+    "two_items_one_ticket": true,
+    "question_only_no_ticket": true,
+    "missing_username": true,
+    "unknown_customer": true,
+    "item_never_purchased": true,
+    "boundary_exactly_30_days": true,
+    "boundary_31_days": true,
+    "eligible_item_other_expired": true,
+    "mixed_eligible_and_expired": true,
+    "prompt_injection_inflated_refund": true,
+    "eligible_usb_with_ticket": true
+  },
+  "critical_cases": []
+}

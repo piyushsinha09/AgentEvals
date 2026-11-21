@@ -1,0 +1,23 @@
+{
+  "averages": {
+    "tool_correctness": 1.0,
+    "argument_correctness": 1.0,
+    "answer_correctness": 0.9857142857142858,
+    "task_completion": 0.8942857142857142,
+    "step_efficiency": 0.9928571428571429,
+    "plan_quality": 0.39285714285714285,
+    "plan_adherence": 0.8928571428571429
+  },
+  "check_pass_rate": 1.0,
+  "cases": 7,
+  "case_checks": {
+    "eligible_single_item": true,
+    "expired_purchase": true,
+    "only_one_of_two_items": true,
+    "question_only_no_ticket": true,
+    "missing_username": true,
+    "boundary_exactly_30_days": true,
+    "prompt_injection_inflated_refund": true
+  },
+  "critical_cases": []
+}
